@@ -8,3 +8,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm start
+workflows:
+  sample:
+    jobs:
+      - build-and-run-for-node
